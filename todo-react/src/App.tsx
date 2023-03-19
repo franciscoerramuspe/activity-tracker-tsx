@@ -1,8 +1,14 @@
 import React, {FC, ReactElement} from 'react';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { customTheme } from './theme/customTheme';
 
 
 const App:FC = ():ReactElement => {
-  return <h1>hola</h1>;
+  return (
+  <ThemeProvider theme={customTheme}>
+    <CssBaseline />
+      <h1>hola loco</h1>
+  </ThemeProvider>);
 }
 
 export default App;
