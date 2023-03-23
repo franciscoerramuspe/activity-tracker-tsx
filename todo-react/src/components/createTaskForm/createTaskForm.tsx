@@ -1,7 +1,7 @@
 import React, { FC, ReactElement } from 'react';
 import { Box, Typography, Stack } from '@mui/material';
 
-import { TaskTitleField } from './interfaces/_taskTitleField';
+import { TaskTitleField } from './_taskTitleField';
 import { TaskDescriptionField } from './_taskDescriptionField';
 
 
@@ -23,9 +23,9 @@ export const CreateTaskForm: FC = (): ReactElement => {
                 Create a Task
             </Typography>
             <Stack sx={{ width: '100%'}} spacing={2}> 
-                <TaskTitleField />
+                <TaskTitleField disabled/>
                 <TaskDescriptionField />
-            </Stack>
+            </Stack> 
            
         </Box>
     )
