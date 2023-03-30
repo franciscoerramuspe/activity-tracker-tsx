@@ -1,10 +1,10 @@
-import React from "react";
-import { IDisabled } from "./IDisabled";
+import { IDisabled } from './IDisabled';
+import React from 'react';
 
 export interface ITextField extends IDisabled {
-    onChange?: (
-        e: React.ChangeEvent<
-        HTMLInputElement | HTMLTextAreaElement
-        >,
-        ) => void;
+  onChange?: (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement
+    >,
+  ) => void;
 }
